@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = "mongodb+srv://test:pass123@cluster0.pi3vrdf.mongodb.net/theft?retryWrites=true&w=majority&appName=Cluster0"
+}
+
+model Users {
+  id        String @id @default(auto()) @map("_id") @db.ObjectId
+  address   String
+  april     Int
+  august    Int
+  december  Int
+  febuary   Int
+  january   Int
+  july      Int
+  june      Int
+  march     Int
+  may       Int
+  meter     String
+  name      String
+  november  Int
+  october   Int
+  september Int
+  status    String
+}
